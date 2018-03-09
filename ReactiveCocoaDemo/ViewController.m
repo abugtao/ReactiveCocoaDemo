@@ -258,11 +258,11 @@
 }
 
 - (IBAction)loginAction:(id)sender {
-    [self test4];
+//    [self test4];
 
     
-//    SecondViewController *secondeVC = [[SecondViewController alloc] init];
-//    [self.navigationController pushViewController:secondeVC animated:YES];
+    SecondViewController *secondeVC = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:secondeVC animated:YES];
 }
 
 

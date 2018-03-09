@@ -18,6 +18,9 @@
 		B5B8BA341AE0CDCB00A04782 /* ReactiveCocoaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B8BA331AE0CDCB00A04782 /* ReactiveCocoaDemoTests.m */; };
 		E0F9E8DAD9F391A52797AA0C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6686F9B8D1A60228A263921 /* libPods.a */; };
 		FCEE8C1C205253010041B349 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEE8C1B205253010041B349 /* Person.m */; };
+		FCEE8C1F2052720F0041B349 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEE8C1E2052720F0041B349 /* ThirdViewController.m */; };
+		FCEE8C22205272680041B349 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEE8C21205272680041B349 /* LoginViewModel.m */; };
+		FCEE8C25205272C90041B349 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEE8C24205272C90041B349 /* Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		D072114E47C32EF6DE1D435F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FCEE8C1A205253010041B349 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		FCEE8C1B205253010041B349 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FCEE8C1D2052720F0041B349 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		FCEE8C1E2052720F0041B349 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		FCEE8C20205272680041B349 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		FCEE8C21205272680041B349 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		FCEE8C23205272C90041B349 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		FCEE8C24205272C90041B349 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,12 @@
 				B538EEAA204544C000DD55BE /* RedView.m */,
 				B538EEAC2045498400DD55BE /* SecondViewController.h */,
 				B538EEAD2045498400DD55BE /* SecondViewController.m */,
+				FCEE8C1D2052720F0041B349 /* ThirdViewController.h */,
+				FCEE8C1E2052720F0041B349 /* ThirdViewController.m */,
+				FCEE8C20205272680041B349 /* LoginViewModel.h */,
+				FCEE8C21205272680041B349 /* LoginViewModel.m */,
+				FCEE8C23205272C90041B349 /* Account.h */,
+				FCEE8C24205272C90041B349 /* Account.m */,
 				B5B8BA211AE0CDCB00A04782 /* Main.storyboard */,
 				B5B8BA241AE0CDCB00A04782 /* Images.xcassets */,
 				B5B8BA261AE0CDCB00A04782 /* LaunchScreen.xib */,
@@ -209,6 +224,7 @@
 				TargetAttributes = {
 					B5B8BA131AE0CDCB00A04782 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = BJ9UUVAJZM;
 					};
 					B5B8BA2C1AE0CDCB00A04782 = {
 						CreatedOnToolsVersion = 6.2;
@@ -293,12 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEE8C25205272C90041B349 /* Account.m in Sources */,
+				FCEE8C22205272680041B349 /* LoginViewModel.m in Sources */,
 				FCEE8C1C205253010041B349 /* Person.m in Sources */,
 				B538EEAE2045498400DD55BE /* SecondViewController.m in Sources */,
 				B5B8BA201AE0CDCB00A04782 /* ViewController.m in Sources */,
 				B5B8BA1D1AE0CDCB00A04782 /* AppDelegate.m in Sources */,
 				B538EEAB204544C000DD55BE /* RedView.m in Sources */,
 				B5B8BA1A1AE0CDCB00A04782 /* main.m in Sources */,
+				FCEE8C1F2052720F0041B349 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,8 +440,10 @@
 			baseConfigurationReference = 2BEF763CF30B39E716376933 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BJ9UUVAJZM;
 				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zht.ReactiveCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -432,8 +453,10 @@
 			baseConfigurationReference = D072114E47C32EF6DE1D435F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BJ9UUVAJZM;
 				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zht.ReactiveCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

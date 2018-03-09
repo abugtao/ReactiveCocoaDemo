@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import <ReactiveCocoa.h>
+#import "ThirdViewController.h"
 @interface SecondViewController ()
 @property (nonatomic,strong) UIButton *codeBtn;
 
@@ -28,6 +29,15 @@
     [self.codeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.codeBtn];
     
+    
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
+    btn.backgroundColor = [UIColor redColor];
+    [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+        [self.navigationController pushViewController:thirdVC animated:YES];
+    }];
+    [self.view addSubview:btn];
     @weakify(self)
     [[self.codeBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIControl * x) {
         @strongify(self)
