@@ -10,4 +10,5 @@
 #define INJECTION_ENABLED
 #endif
 
-#import "/Users/zht/Library/Application Support/Developer/Shared/Xcode/Plug-ins/InjectionPlugin.xcplugin/Contents/Resources/BundleInterface.h"
+//#import "/Users/zht/Library/Application Support/Developer/Shared/Xcode/Plug-ins/InjectionPlugin.xcplugin/Contents/Resources/BundleInterface.h"
+
