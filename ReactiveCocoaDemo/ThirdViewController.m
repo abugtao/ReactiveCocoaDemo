@@ -63,8 +63,8 @@
     //修改textfield改变account属性
     RAC(self.viewModel.account,name) = _nameTextField.rac_textSignal;
     RAC(self.viewModel.account,pwd) = _pwdTextField.rac_textSignal;
-    
     RAC(self.loginBtn,enabled) = self.viewModel.loginEnableSignal;
+    
 }
 - (void)buttonAction{
     
